@@ -181,7 +181,7 @@ function scan_screen(timeout = 5) {
     ignore = []
     if(Array.isArray(tv_list)) {
         tv_list.forEach(element => {
-            //ignore.push(element.address);
+            ignore.push(element.address);
         });
     }
     scan(timeout,ignore,interactive_scan_callback)
