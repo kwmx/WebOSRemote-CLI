@@ -2,7 +2,7 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/kwmx/WebOSRemote-CLI#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-no-orange.svg" />
   </a>
   <a href="https://github.com/kwmx/WebOSRemote-CLI/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
