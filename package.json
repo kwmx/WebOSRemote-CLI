@@ -1,0 +1,38 @@
+{
+  "name": "webosremote-cli",
+  "version": "1.0.1",
+  "description": "A CLI tool to be used as a webOS remote",
+  "main": "lgtv.js",
+  "bin":{
+    "lgtv": "./lgtv.js"
+  },
+  "scripts": {
+    "run": "node lgtv.js",
+    "start": "node lgtv.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwmx/WebOSRemote-CLI.git"
+  },
+  "keywords": [
+    "webos",
+    "smarttv",
+    "remote",
+    "tool"
+  ],
+  "author": "Faisal K",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwmx/WebOSRemote-CLI/issues"
+  },
+  "homepage": "https://github.com/kwmx/WebOSRemote-CLI#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cli-table": "^0.3.1",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0",
+    "lgtv2": "^1.4.1",
+    "wake_on_lan": "^1.0.0"
+  }
+}
