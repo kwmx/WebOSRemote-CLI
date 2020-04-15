@@ -119,7 +119,38 @@ function auth_screen(address = undefined) {
             }
         });
     } else {
-
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'address',
+                message: "Please enter the address for the TV",
+                validate: function(value) {
+                    var pass = value.match(
+                        /(?:[0-9]{1,3}\.){3}[0-9]{1,3}/i
+                    );
+                    if (pass) {
+                      return true;
+                    }
+              
+                    return 'Please enter a valid IPv4 address';
+                  }
+            },
+            {
+                type: 'input',
+                name: 'alias',
+                message: "What would you to make the alias for this TV?"
+            }
+        ])
+        .then(answers => {
+            authrize(answers.alias, answers.address)
+        })
+        .catch(error => {
+            if(error.isTtyError) {
+                console.error(chalk.red("Error") + ": Prompt couldn't be rendered in the current environment")
+            } else {
+                console.error(chalk.red("Error") + ": Unable to create menu.\nDetails:\n" + error)
+            }
+        });
     }
 }
 function interactive_scan_callback(status, address) {
