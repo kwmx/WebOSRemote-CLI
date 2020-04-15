@@ -18,7 +18,7 @@ const config = new Configstore(packageJson.name)
 var tv_list = config.get("tv_list")
 function banner() {
     process.stdout.write('\x1b[2J\n\x1b[0f')
-    console.log(chalk.underline.bold.italic.keyword("orange")("\t\t\t\tLG CLI Remote\n") + chalk.cyan(current_screen+"\t\t\t\t\t\t\t") + chalk.blue("v: 1.0.0\n\n\n"))
+    console.log("\t\t\t\t" + chalk.underline.bold.italic.keyword("orange")("LG CLI Remote\n") + chalk.cyan(current_screen+"\t\t\t\t\t\t\t") + chalk.blue("v: 1.0.4\n\n\n"))
 }
 function get_mac_address(ip) {
     if (process.platform === "win32") code = execSync('arp /g ' + ip);

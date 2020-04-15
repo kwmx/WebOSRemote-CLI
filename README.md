@@ -17,6 +17,9 @@
 
 > A CLI tool to be used as a WebOS remote
 (Early development very terrible and messy code. You have been warned!)
+
+![TV Control Screen](https://i.imgur.com/TUnhxSt.png)
+
 ### 🏠 [Homepage](https://github.com/kwmx/WebOSRemote-CLI#readme)
 
 ## Install
